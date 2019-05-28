@@ -1,0 +1,36 @@
+header{
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.header-content {
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-left {
+	display: flex;
+	align-items: center;
+}
+
+.header-logo {
+	margin-right: 10px;
+}
+
+.header-text {
+	font-size: 1.25em;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+}
+
+.header-call-us {
+	font-size: 0.75em;
+}
+
