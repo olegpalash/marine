@@ -8,6 +8,7 @@ nav {
 	display: flex;
 	width: 1000px;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .navbar-links {
@@ -43,3 +44,49 @@ nav {
 	display: inline-block;	
 }
 
+.navbar-search {
+	position: relative;
+}
+
+.navbar-search-dropdown {
+	display: none;
+	align-items: flex-end;
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+	right: 0px;
+	z-index: 1;
+}
+
+.navbar-search:hover .navbar-search-dropdown {
+	display: flex;
+}
+
+.navbar-search-input {
+	display: inline-block;
+	border: 0;
+	color: rgb(115, 132, 142);
+	background-color: white;
+	margin: 16px;
+}
+
+.navbar-search-button {
+	padding: 16px;
+	background-color: rgb(35, 50, 58);
+}
+
+.navbar-search-icon {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+}
+
+.navbar-search-arrow {
+	position: absolute;
+	display: none;
+	z-index: 1;
+	bottom: 0px;
+}
+
+.navbar-search:hover .navbar-search-arrow {
+	display: block;	
+}
