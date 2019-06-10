@@ -1,0 +1,32 @@
+.carousel-container {
+	background-color: rgb(3, 103, 142);
+	position: relative;
+}
+
+.carousel-content {
+	display: none;
+}
+
+.carousel-content img {
+	display: block;
+}
+
+.carousel-leftarrow, 
+.carousel-rightarrow {
+	position: absolute;
+	border-color: rgb(63, 139, 196);
+	border-width: 1px;
+	border-style: solid;
+	top: calc(50% - 32px);
+	padding: 16px;
+}
+
+.carousel-leftarrow {
+	left: 0px;
+	border-left-width: 0px;
+}
+
+.carousel-rightarrow {
+	right: 0px;
+	border-right-width: 0px;
+}

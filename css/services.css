@@ -1,0 +1,37 @@
+.services {
+	background-image: linear-gradient(rgb(34, 172, 192), rgb(1, 144, 211));
+	display: flex;
+	justify-content: center;
+}
+
+.services-content {
+	width: 1000px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.service {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 32px 0px;	
+}
+
+.service-icon {
+	background-color: rgb(45, 170, 204);
+	border-color: rgb(50, 174, 207);
+	border-width: 1px;
+	border-style: solid;
+	padding: 16px;
+}
+
+.service-name {
+	margin-top: 24px;
+	color: rgb(255, 255, 255);
+}
+
+.service-description {
+	color: rgb(140, 217, 255);
+	font-size: 0.75em;
+}

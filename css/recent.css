@@ -1,0 +1,121 @@
+.recent {
+	background-color: rgb(35, 50, 58);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.recent-title {
+	color: rgb(196, 211, 222);
+	font-size: 1.5em;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.recent-text {
+	color: rgb(101, 129, 144);
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.recent-projects {
+	display: flex;
+	max-width: 100%;
+	overflow-x: hidden;
+	justify-content: center;
+}
+
+/****************************/
+
+.project,
+.project-selected {
+	border-left: 1px solid rgb(35, 50, 58);
+}
+
+.project-top {
+	position: relative;
+}
+
+.project-top img {
+	display: block
+}
+
+.project-arrow
+{
+	position: absolute;
+	bottom: 0px;
+	left: 20px;
+	width: 0px;
+	height: 0px;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid rgb(42, 59, 69);
+}
+
+
+.project-selected .project-arrow {
+	border-bottom-color: rgb(47, 66, 77);
+}
+
+.project-buttons {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+	z-index: 1;
+}
+
+.project-selected .project-buttons {
+	display: block;
+}
+
+.project-button {
+	padding: 12px;
+	background-color: rgba(35, 50, 58, 0.25);
+}
+
+.project-description {
+	background-color: rgb(42, 59, 69);
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 20px;
+}
+
+.project-selected .project-description {
+	background-color: rgb(47, 66, 77);
+}
+
+.project-title {
+	color: rgb(255, 255, 255);
+}
+
+.project-text {
+	color: rgb(151, 164, 172);
+	font-size: 0.75em;
+}
+
+.project-hearth,
+.project-hearth-selected {
+	display: none;
+}
+
+.project .project-hearth {
+	display: inline;
+}
+
+.project-selected .project-hearth-selected {
+	display: inline;
+}
+
+.project-right {
+	display: flex;
+	align-items: center;
+}
+
+.project-score {
+	font-size: 0.75em;
+	color: rgb(163, 173, 179);
+	margin-left: 0.3em;
+}
+

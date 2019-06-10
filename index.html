@@ -5,91 +5,258 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/header.css">
 		<link rel="stylesheet" href="css/navbar.css">
+		<link rel="stylesheet" href="css/carousel.css">
+		<link rel="stylesheet" href="css/services.css">
+		<link rel="stylesheet" href="css/recent.css">
 		<link rel="shortcut icon" href="favicon.png" type="image/png">
+		<script src="js/carousel.js"></script>
+		<script src="js/recent.js"></script>
 	</head>
-	<body>
+	<body onload="initCarousel();">
 		<header>
 			<div class="header-content">
 				<div class="header-left">
-					<img class="header-logo" src="images/marine-logo.png" alt="MARINE logo">
+					<img class="header-logo" src="images/header/marine-logo.png" alt="MARINE logo">
 					<div class="header-text">MARINE</div>
 				</div>
 				<div class="header-right">
 					<div class="header-call-us">CALL US: +1 800 450 17 04 | </div>
 					<a href="https://facebook.com">
-						<img src="images/facebook-logo.png" alt="Facebook" class="service-logo">
+						<img src="images/header/facebook-logo.png" alt="Facebook" class="service-logo">
 					</a>
 					<a href="https://twitter.com">
-						<img src="images/twitter-logo.png" alt="Twitter" class="service-logo">
+						<img src="images/header/twitter-logo.png" alt="Twitter" class="service-logo">
 					</a>
 					<a href="https://skype.com">
-						<img src="images/skype-logo.png" alt="Skype" class="service-logo">
+						<img src="images/header/skype-logo.png" alt="Skype" class="service-logo">
 					</a>
 					<a href="https://plus.google.com">
-						<img src="images/googleplus-logo.png" alt="Google+" class="service-logo">
+						<img src="images/header/googleplus-logo.png" alt="Google+" class="service-logo">
 					</a>
 					<a href="https://vimeo.com">
-						<img src="images/vimeo-logo.png" alt="Vimeo" class="service-logo">
+						<img src="images/header/vimeo-logo.png" alt="Vimeo" class="service-logo">
 					</a>
 					<a href="https://linkedin.com">
-						<img src="images/linkedin-logo.png" alt="LinkeIn" class="service-logo">
+						<img src="images/header/linkedin-logo.png" alt="LinkeIn" class="service-logo">
 					</a>
 					<a href="https://instagram.com">
-						<img src="images/instagram-logo.png" alt="Instagram" class="service-logo">
+						<img src="images/header/instagram-logo.png" alt="Instagram" class="service-logo">
 					</a>
 				</div>
 			</div>
 		</header>
+		
 		<nav>
 			<div class="navbar-content">
 				<ul class="navbar-links">
 					<li>
 						<a href="index.html" class="navbar-link-selected">
 							HOME
-							<img src="images/arrow-down.png" class="navbar-arrow-down">
-							<img src="images/arrow-right.png" class="navbar-arrow-right">
+							<img src="images/navbar/arrow-down.png" class="navbar-arrow-down">
+							<img src="images/navbar/arrow-right.png" class="navbar-arrow-right">
 						</a>
 					</li>
 					<li>
 						<a href="index.html" class="navbar-link">
 							BLOG
-							<img src="images/arrow-down.png" class="navbar-arrow-down">
-							<img src="images/arrow-right.png" class="navbar-arrow-right">
+							<img src="images/navbar/arrow-down.png" class="navbar-arrow-down">
+							<img src="images/navbar/arrow-right.png" class="navbar-arrow-right">
 						</a>
 					</li>
 					<li>
 						<a href="index.html" class="navbar-link">
 							GALLERY
-							<img src="images/arrow-down.png" class="navbar-arrow-down">
-							<img src="images/arrow-right.png" class="navbar-arrow-right">
+							<img src="images/navbar/arrow-down.png" class="navbar-arrow-down">
+							<img src="images/navbar/arrow-right.png" class="navbar-arrow-right">
 						</a>
 					</li>
 					<li>
 						<a href="index.html" class="navbar-link">
 							PAGES
-							<img src="images/arrow-down.png" class="navbar-arrow-down">
-							<img src="images/arrow-right.png" class="navbar-arrow-right">
+							<img src="images/navbar/arrow-down.png" class="navbar-arrow-down">
+							<img src="images/navbar/arrow-right.png" class="navbar-arrow-right">
 						</a>
 					</li>
 					<li>
 						<a href="index.html" class="navbar-link">
 							CONTACTS
-							<img src="images/arrow-down.png" class="navbar-arrow-down">
-							<img src="images/arrow-right.png" class="navbar-arrow-right">
+							<img src="images/navbar/arrow-down.png" class="navbar-arrow-down">
+							<img src="images/navbar/arrow-right.png" class="navbar-arrow-right">
 						</a>
 					</li>
 				</ul>
 				<div class="navbar-search">
 					<div>
-						<img src="images/search-icon.png" alt="Search" class="navbar-search-icon">
+						<img src="images/navbar/search-icon.png" alt="Search" class="navbar-search-icon">
 					</div>
-					<img src="images/search-arrow.png" class="navbar-search-arrow">
+					<img src="images/navbar/search-arrow.png" class="navbar-search-arrow">
 					<div class="navbar-search-dropdown">
 						<input type="text" class="navbar-search-input">
-						<input type="image" src="images/search-button.png" class="navbar-search-button">
+						<input type="image" src="images/navbar/search-button.png" class="navbar-search-button">
 					</div>
 				</div>
 			</div>			
 		</nav>
+
+		<div class="carousel-container">
+			<div class="carousel-content" id="slide-1">
+				<img src="images/carousel/image-0.png" width="100%">
+			</div>	
+			<div class="carousel-content" id="slide-2">
+				<img src="images/carousel/image-2.jpeg" width="100%">
+			</div>	
+			<input type="image" src="images/carousel/arrow-left.png" class="carousel-leftarrow" onclick="prevSlide();">
+			<input type="image" src="images/carousel/arrow-right.png" class="carousel-rightarrow" onclick="nextSlide();">
+		</div>
+		
+		<div class="services">
+			<div class="services-content">
+				<div class="service">
+					<div class="service-icon">
+						<img src="images/services/development.png">
+					</div>
+					<div class="service-name">Web development</div>
+					<div class="service-description">IT WAS HARD TO MAKE IT SO COOL</div>
+				</div>
+				<div class="service">
+					<div class="service-icon">
+						<img src="images/services/monitoring.png">
+					</div>
+					<div class="service-name">SEO monitoring</div>
+					<div class="service-description">IT WAS HARD TO MAKE IT SO COOL</div>
+				</div>
+				<div class="service">
+					<div class="service-icon">
+						<img src="images/services/communities.png">
+					</div>
+					<div class="service-name">Network communities</div>
+					<div class="service-description">IT WAS HARD TO MAKE IT SO COOL</div>
+				</div>
+				<div class="service">
+					<div class="service-icon">
+						<img src="images/services/analytics.png">
+					</div>
+					<div class="service-name">Web analytics</div>
+					<div class="service-description">IT WAS HARD TO MAKE IT SO COOL</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="recent">
+			<div class="recent-title">Recent Projects</div>
+			<div class="recent-text">
+				Morbi a liberto eget erat auctor cursus vitae id tortor.
+				Suspendisse rhoncus. Vestibulum eu ligula lorem.
+				<br>
+				Vivamus orci sem, consectetur ut vestibulum a, semper ac dui.
+			</div>
+			<div class="recent-projects">
+				<div class="project" onclick="selectProject(this);">
+					<div class="project-top">
+						<img src="images/recent/388x202.png">
+						<div class="project-arrow"></div>
+						<div class="project-buttons">
+							<input type="image" src="images/recent/button-1.png" class="project-button">
+							<input type="image" src="images/recent/button-2.png" class="project-button">
+						</div>
+					</div>
+					<div class="project-description" onclick="selectProject(this);">
+						<div>
+							<div class="project-title">Project Title</div>
+							<div class="project-text">GRAPHIC DESIGN</div>
+						</div>
+						<div class="project-right">
+							<img src="images/recent/hearth.png" class="project-hearth">
+							<img src="images/recent/hearth-selected.png" class="project-hearth-selected">
+							<div class="project-score">12</div>
+						</div>
+					</div>
+				</div>				
+				<div class="project-selected" onclick="selectProject(this);">
+					<div class="project-top">
+						<img src="images/recent/388x202.png">
+						<div class="project-arrow"></div>
+						<div class="project-buttons">
+							<input type="image" src="images/recent/button-1.png" class="project-button">
+							<input type="image" src="images/recent/button-2.png" class="project-button">
+						</div>
+					</div>
+					<div class="project-description">
+						<div>
+							<div class="project-title">Project Title</div>
+							<div class="project-text">GRAPHIC DESIGN</div>
+						</div>
+						<div class="project-right">
+							<img src="images/recent/hearth.png" class="project-hearth">
+							<img src="images/recent/hearth-selected.png" class="project-hearth-selected">
+							<div class="project-score">12</div>
+						</div>
+					</div>
+				</div>				
+				<div class="project" onclick="selectProject(this);">
+					<div class="project-top">
+						<img src="images/recent/388x202.png">
+						<div class="project-arrow"></div>
+						<div class="project-buttons">
+							<input type="image" src="images/recent/button-1.png" class="project-button">
+							<input type="image" src="images/recent/button-2.png" class="project-button">
+						</div>
+					</div>
+					<div class="project-description">
+						<div>
+							<div class="project-title">Project Title</div>
+							<div class="project-text">GRAPHIC DESIGN</div>
+						</div>
+						<div class="project-right">
+							<img src="images/recent/hearth.png" class="project-hearth">
+							<img src="images/recent/hearth-selected.png" class="project-hearth-selected">
+							<div class="project-score">12</div>
+						</div>
+					</div>
+				</div>				
+				<div class="project" onclick="selectProject(this);">
+					<div class="project-top">
+						<img src="images/recent/388x202.png">
+						<div class="project-arrow"></div>
+						<div class="project-buttons">
+							<input type="image" src="images/recent/button-1.png" class="project-button">
+							<input type="image" src="images/recent/button-2.png" class="project-button">
+						</div>
+					</div>
+					<div class="project-description">
+						<div>
+							<div class="project-title">Project Title</div>
+							<div class="project-text">GRAPHIC DESIGN</div>
+						</div>
+						<div class="project-right">
+							<img src="images/recent/hearth.png" class="project-hearth">
+							<img src="images/recent/hearth-selected.png" class="project-hearth-selected">
+							<div class="project-score">12</div>
+						</div>
+					</div>
+				</div>				
+				<div class="project" onclick="selectProject(this);">
+					<div class="project-top">
+						<img src="images/recent/388x202.png">
+						<div class="project-arrow"></div>
+						<div class="project-buttons">
+							<input type="image" src="images/recent/button-1.png" class="project-button">
+							<input type="image" src="images/recent/button-2.png" class="project-button">
+						</div>
+					</div>
+					<div class="project-description">
+						<div>
+							<div class="project-title">Project Title</div>
+							<div class="project-text">GRAPHIC DESIGN</div>
+						</div>
+						<div class="project-right">
+							<img src="images/recent/hearth.png" class="project-hearth">
+							<img src="images/recent/hearth-selected.png" class="project-hearth-selected">
+							<div class="project-score">12</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
 	</body>
 </html>
