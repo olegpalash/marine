@@ -1,0 +1,112 @@
+.form {
+	background-image: url("../images/form/background.png");
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.form-title {
+	color: rgb(255, 255, 255);
+	font-size: 2em;
+	margin: 1rem 0;
+}
+
+.form input,
+.form textarea {
+	border: none;
+	background-color: transparent;
+	font-size: 1rem;
+	width: 90%;
+}
+
+.form textarea {
+	resize: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+	outline: none;
+}
+
+.form-input,
+.form-textarea {
+	background-color: rgba(254, 254, 254, 0.66);
+	border: 1px solid rgba(252, 252, 253, 0.70);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em;
+	margin: 0.5rem 0;
+	width: 500px;
+}
+
+.form-buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.form button {
+	background-color: rgb(100, 115, 127);
+	border: 1px solid rgb(112, 126, 137);
+	color: rgb(255, 255, 255);
+	margin: 0.5rem;
+	width: 20%;
+	font-size: 0.75rem;
+}
+
+.form img {
+	vertical-align: middle;
+}
+
+.last {
+	background-color: rgb(0, 143, 213);
+	display: flex;
+	justify-content: center;
+}
+
+.last-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.last-msg-icon {
+	display: flex;
+}
+
+.last-msg-logo {
+	padding: 30px;
+	background-color: rgb(31, 156, 218);
+}
+
+.last-msg-arrow
+{
+	border-top: 8px solid rgb(31, 156, 218);
+	border-left: 8px solid rgb(31, 156, 218);
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	margin-top: 20px;
+}
+
+.last-message {
+	color: rgb(255, 255, 255);
+	font-size: 1em;
+	margin-top: 1.5rem;
+}
+
+.last-message .selected {
+	font-style: italic;
+	color: rgb(187, 219, 239);
+}
+
+.last-msg-time {
+	font-style: italic;
+	color: rgb(187, 219, 239);
+	font-size: 0.75em;
+}
+
+.last-msg-buttons {
+	align-self: center
+}
+

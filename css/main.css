@@ -1,11 +1,27 @@
-body{
+body {
 	font-family: sans;
 	margin: 0;
+	font-weight: lighter;
 }
 
-.service-logo
-{
-	margin-left: 7px;
-	margin-right: 7px;
+.service-logo {
+	margin: 0 3px;
 }
+
+a {
+	text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+	.content {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1201px) {
+	.content {
+		width: 1200px;
+	}
+}
+
 

@@ -1,12 +1,10 @@
 header{
 	display: flex;
 	justify-content: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 0.5rem 0;
 }
 
 .header-content {
-	width: 1000px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -18,7 +16,7 @@ header{
 }
 
 .header-logo {
-	margin-right: 10px;
+	margin-right: 0.5rem;
 }
 
 .header-text {

@@ -8,13 +8,20 @@
 		<link rel="stylesheet" href="css/carousel.css">
 		<link rel="stylesheet" href="css/services.css">
 		<link rel="stylesheet" href="css/recent.css">
+		<link rel="stylesheet" href="css/posts.css">
+		<link rel="stylesheet" href="css/solutions.css">
+		<link rel="stylesheet" href="css/team.css">
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/footer.css">
 		<link rel="shortcut icon" href="favicon.png" type="image/png">
 		<script src="js/carousel.js"></script>
 		<script src="js/recent.js"></script>
+		<script src="js/accordeon.js"></script>
+		<script src="js/form.js"></script>
 	</head>
 	<body onload="initCarousel();">
 		<header>
-			<div class="header-content">
+			<div class="header-content content">
 				<div class="header-left">
 					<img class="header-logo" src="images/header/marine-logo.png" alt="MARINE logo">
 					<div class="header-text">MARINE</div>
@@ -47,7 +54,7 @@
 		</header>
 		
 		<nav>
-			<div class="navbar-content">
+			<div class="navbar-content content">
 				<ul class="navbar-links">
 					<li>
 						<a href="index.html" class="navbar-link-selected">
@@ -103,14 +110,23 @@
 				<img src="images/carousel/image-0.png" width="100%">
 			</div>	
 			<div class="carousel-content" id="slide-2">
-				<img src="images/carousel/image-2.jpeg" width="100%">
+				<img src="images/carousel/image-1.png" width="100%">
 			</div>	
 			<input type="image" src="images/carousel/arrow-left.png" class="carousel-leftarrow" onclick="prevSlide();">
 			<input type="image" src="images/carousel/arrow-right.png" class="carousel-rightarrow" onclick="nextSlide();">
+			<div class="carousel-upper">
+				<img src="images/carousel/ship.png">
+				<div class="carousel-title">NATURAL POWER</div>
+				<div class="carousel-text">
+					<div class="carousel-text">
+						VIVAMUS ORCI SEM, CONSECTETUR UT VESTIBULUM
+					</div>
+				</div>
+			</div>
 		</div>
 		
 		<div class="services">
-			<div class="services-content">
+			<div class="services-content content">
 				<div class="service">
 					<div class="service-icon">
 						<img src="images/services/development.png">
@@ -257,6 +273,490 @@
 					</div>
 				</div>				
 			</div>
+		</div>
+		
+		<div class="posts">
+			<div class="posts-head">
+				<div class="posts-text">
+					<span class="selected">A fully responsive theme</span> with clean design for your success!
+				</div>
+				<button class="posts-button">
+					<img src="images/posts/info.png">&nbsp;CHECK DETAILS
+				</button>
+			</div>	
+			<div class="posts-main content">
+				<div class="posts-recent">
+					<div class="posts-section-title">Recent Posts</div>
+					<div class="post">
+						<div>
+							<div class="post-date-day">15</div>
+							<div class="post-date">OCT, 2013</div>
+							<img src="images/posts/photo.png" class="post-type">
+						</div>
+						<div class="post-image">
+							<img src="images/posts/130x130.png">
+						</div>
+						<div>
+							<div class="post-info">
+								BY ADMIN &bull; WEB, NEWS &bull; 5 COMMENTS &bull;
+								<a href="index.html">READ MORE &gt;</a>
+							</div>
+							<div class="post-title">Vivamus orci sem, conse tur per ac dui oin vulputate.</div>
+							<div class="post-description">Proin vulputate aliquam mi nec hendrerit. Sed entum velit vel ipsum.</div>
+						</div>
+					</div>
+					<div class="post">
+						<div>
+							<div class="post-date-day">25</div>
+							<div class="post-date">OCT, 2013</div>
+							<img src="images/posts/video.png" class="post-type">
+						</div>
+						<div class="post-image">
+							<img src="images/posts/130x130.png">
+						</div>
+						<div>
+							<div class="post-info">
+								BY ADMIN &bull; WEB, NEWS &bull; 5 COMMENTS &bull;
+								<a href="index.html">READ MORE &gt;</a>
+							</div>
+							<div class="post-title">Orci sem, conse tur per ac dui oin tate.</div>
+							<div class="post-description">
+								Proin vulputate aliquam mi nec hendrerit.
+								Sed entum velit vel ipsum.
+								Ut sem lacus ttitor et aliqua. eget iaculis id lacus
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="posts-accordeon">
+					<div class="posts-section-title">Accordeon</div>
+					<button class="accordeon-button" onclick="accordeonClick(this);">
+						<div class="accordeon-icon">+</div>
+						<div class="accordeon-icon-active">-</div>
+						Vivamus orci sem sectetur.
+					</button>
+					<div class="accordeon-post">
+						<p>
+							Sed entum velit vel ipsum bibendum em lacus, itor et aliquam eget, iaculis id lacus. Praesent tudin
+						</p>
+						<p>
+							Aiquam eget, iaculis id lacus. Praesent tudin. Ut sem lacus, ttitor putate uam mi nec hendrerit.
+						</p>
+					</div>
+					<button class="accordeon-button" onclick="accordeonClick(this);">
+						<div class="accordeon-icon">+</div>
+						<div class="accordeon-icon-active">-</div>
+						Sed entum velit vel ipsum.
+					</button>
+					<div class="accordeon-post">
+						<p>
+							Sed entum velit vel ipsum bibendum em lacus, itor et aliquam eget, iaculis id lacus. Praesent tudin
+						</p>
+						<p>
+							Aiquam eget, iaculis id lacus. Praesent tudin. Ut sem lacus, ttitor putate uam mi nec hendrerit.
+						</p>
+					</div>
+					<button class="accordeon-button" onclick="accordeonClick(this);">
+						<div class="accordeon-icon">+</div>
+						<div class="accordeon-icon-active">-</div>
+						Porttitor et aliquam eget.
+					</button>
+					<div class="accordeon-post">
+						<p>
+							Sed entum velit vel ipsum bibendum em lacus, itor et aliquam eget, iaculis id lacus. Praesent tudin
+						</p>
+						<p>
+							Aiquam eget, iaculis id lacus. Praesent tudin. Ut sem lacus, ttitor putate uam mi nec hendrerit.
+						</p>
+					</div>
+				</div>
+				<div class="posts-whatsay">
+					<div class="posts-section-title">What People Say</div>
+					<div class="quote-label">
+						<img src="images/posts/81x81.png">
+						<div>
+							<div class="quote-name">Sarah Doe</div>
+							<div class="quote-company">CEO, COMPANY.COM</div>
+						</div>
+					</div>
+					<div class="quote-arrow-line">
+						<div class="quote-arrow"></div>
+					</div>
+					<div class="quote">
+						<div class="quote-mark"><img src="images/posts/quote.png"></div>
+						<div class="quote-text">
+							<div class="quote-title">
+								Vivamus orci sem, consectetur ut vestibulum a, semper ac dui.
+							</div>
+							Proin vulputate aliquam mi nec rerit.
+							Sed entum velit vel ipsum bibendum tristique.
+							Ut sem lacus ttitor putate liquam mi nec hendrit.
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<div class="solutions">
+			<div class="solutions-content content">
+				<div class="solutions-left">
+					<img src="images/solutions/298x182.png" class="solutions-img298x182">
+					<img src="images/solutions/shadow-bottom2.png" class="solutions-shadow-bottom21">
+					<img src="images/solutions/shadow-left.png" class="solutions-shadow-left">
+					<img src="images/solutions/shadow-bottom1.png" class="solutions-shadow-bottom1">
+					<img src="images/solutions/395x241.png" class="solutions-img395x241">
+					<img src="images/solutions/shadow-bottom2.png" class="solutions-shadow-bottom22">
+					<img src="images/solutions/keyboard.png" class="solutions-keyboard">
+				</div> 
+				<div class="solutions-right">
+					<div class="solutions-item">
+						<img src="images/solutions/logo-1.png">
+						<div class="solutions-item-right">
+							<div class="solutions-item-title">Flexible Solutions</div>
+							<div class="solutions-item-text">
+								Lorem ipsum dolor sit amet, <span class="selected">tetur piscing</span> elit.
+								Suspendisse smod congue bibendum.
+								Phaselus eget justo lacus.
+							</div>
+						</div>
+					</div>
+					<div class="solutions-item">
+						<img src="images/solutions/logo-2.png">
+						<div class="solutions-item-right">
+							<div class="solutions-item-title">Target Approach</div>
+							<div class="solutions-item-text">
+								Lorem ipsum dolor sit amet, <span class="selected">tetur piscing</span> elit.
+								Suspendisse smod congue bibendum.
+								Phaselus eget justo lacus.
+							</div>
+						</div>
+					</div>
+					<div class="solutions-item">
+						<img src="images/solutions/logo-2.png">
+						<div class="solutions-item-right">
+							<div class="solutions-item-title">Global Development</div>
+							<div class="solutions-item-text">
+								Lorem ipsum dolor sit amet, <span class="selected">tetur piscing</span> elit.
+								Suspendisse smod congue bibendum.
+								Phaselus eget justo lacus.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="team">
+			<div class="team-title">Our Team</div>
+			<div class="team-content content">
+				<div class="card">
+					<div class="card-photo">
+						<img src="images/team/190x181.png">
+					</div>
+					<div class="card-name">Sarah Doe</div>
+					<div class="card-position">CEO</div>
+					<div class="card-description">
+						Proin vulputate aliquam mi nec rerit.
+						Sed entum velit vel ipsum bibendum tritique.
+					</div>
+					<div class="card-line"></div>
+					<div>
+						<a href="https://facebook.com">
+							<img src="images/header/facebook-logo.png" alt="Facebook" class="service-logo">
+						</a>
+						<a href="https://twitter.com">
+							<img src="images/header/twitter-logo.png" alt="Twitter" class="service-logo">
+						</a>
+						<a href="https://skype.com">
+							<img src="images/header/skype-logo.png" alt="Skype" class="service-logo">
+						</a>
+						<a href="https://plus.google.com">
+							<img src="images/header/googleplus-logo.png" alt="Google+" class="service-logo">
+						</a>
+						<a href="https://vimeo.com">
+							<img src="images/header/vimeo-logo.png" alt="Vimeo" class="service-logo">
+						</a>
+						<a href="https://linkedin.com">
+							<img src="images/header/linkedin-logo.png" alt="LinkeIn" class="service-logo">
+						</a>
+						<a href="https://instagram.com">
+							<img src="images/header/instagram-logo.png" alt="Instagram" class="service-logo">
+						</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-photo">
+						<img src="images/team/190x181.png">
+					</div>
+					<div class="card-name">Sarah Doe</div>
+					<div class="card-position">CEO</div>
+					<div class="card-description">
+						Proin vulputate aliquam mi nec rerit.
+						Sed entum velit vel ipsum bibendum tritique.
+					</div>
+					<div class="card-line"></div>
+					<div>
+						<a href="https://facebook.com">
+							<img src="images/header/facebook-logo.png" alt="Facebook" class="service-logo">
+						</a>
+						<a href="https://twitter.com">
+							<img src="images/header/twitter-logo.png" alt="Twitter" class="service-logo">
+						</a>
+						<a href="https://skype.com">
+							<img src="images/header/skype-logo.png" alt="Skype" class="service-logo">
+						</a>
+						<a href="https://plus.google.com">
+							<img src="images/header/googleplus-logo.png" alt="Google+" class="service-logo">
+						</a>
+						<a href="https://vimeo.com">
+							<img src="images/header/vimeo-logo.png" alt="Vimeo" class="service-logo">
+						</a>
+						<a href="https://linkedin.com">
+							<img src="images/header/linkedin-logo.png" alt="LinkeIn" class="service-logo">
+						</a>
+						<a href="https://instagram.com">
+							<img src="images/header/instagram-logo.png" alt="Instagram" class="service-logo">
+						</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-photo">
+						<img src="images/team/190x181.png">
+					</div>
+					<div class="card-name">Sarah Doe</div>
+					<div class="card-position">CEO</div>
+					<div class="card-description">
+						Proin vulputate aliquam mi nec rerit.
+						Sed entum velit vel ipsum bibendum tritique.
+					</div>
+					<div class="card-line"></div>
+					<div>
+						<a href="https://facebook.com">
+							<img src="images/header/facebook-logo.png" alt="Facebook" class="service-logo">
+						</a>
+						<a href="https://twitter.com">
+							<img src="images/header/twitter-logo.png" alt="Twitter" class="service-logo">
+						</a>
+						<a href="https://skype.com">
+							<img src="images/header/skype-logo.png" alt="Skype" class="service-logo">
+						</a>
+						<a href="https://plus.google.com">
+							<img src="images/header/googleplus-logo.png" alt="Google+" class="service-logo">
+						</a>
+						<a href="https://vimeo.com">
+							<img src="images/header/vimeo-logo.png" alt="Vimeo" class="service-logo">
+						</a>
+						<a href="https://linkedin.com">
+							<img src="images/header/linkedin-logo.png" alt="LinkeIn" class="service-logo">
+						</a>
+						<a href="https://instagram.com">
+							<img src="images/header/instagram-logo.png" alt="Instagram" class="service-logo">
+						</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-photo">
+						<img src="images/team/190x181.png">
+					</div>
+					<div class="card-name">Sarah Doe</div>
+					<div class="card-position">CEO</div>
+					<div class="card-description">
+						Proin vulputate aliquam mi nec rerit.
+						Sed entum velit vel ipsum bibendum tritique.
+					</div>
+					<div class="card-line"></div>
+					<div>
+						<a href="https://facebook.com">
+							<img src="images/header/facebook-logo.png" alt="Facebook" class="service-logo">
+						</a>
+						<a href="https://twitter.com">
+							<img src="images/header/twitter-logo.png" alt="Twitter" class="service-logo">
+						</a>
+						<a href="https://skype.com">
+							<img src="images/header/skype-logo.png" alt="Skype" class="service-logo">
+						</a>
+						<a href="https://plus.google.com">
+							<img src="images/header/googleplus-logo.png" alt="Google+" class="service-logo">
+						</a>
+						<a href="https://vimeo.com">
+							<img src="images/header/vimeo-logo.png" alt="Vimeo" class="service-logo">
+						</a>
+						<a href="https://linkedin.com">
+							<img src="images/header/linkedin-logo.png" alt="LinkeIn" class="service-logo">
+						</a>
+						<a href="https://instagram.com">
+							<img src="images/header/instagram-logo.png" alt="Instagram" class="service-logo">
+						</a>
+					</div>
+				</div>
+			</div>		
+		</div>
+		
+		<div class="companies">
+			<div class="companies-content content">
+				<img src="images/team/company-1.png">
+				<img src="images/team/company-2.png">
+				<img src="images/team/company-3.png">
+				<img src="images/team/company-4.png">
+				<img src="images/team/company-5.png">
+			</div>
+		</div>
+		
+		<div class="form">
+			<div class="form-title">Get In Touch!</div>
+			<form id="message-form" action="index.html" method="post">
+				<div class="form-input">
+					<input type="text" value="Name*" name="name" onfocus="onFocus(this);" onblur="onBlur(this);">
+					<img src="images/form/name-icon.png">
+				</div>
+				<div class="form-input">
+					<input type="email" value="E-mail*" name="email" onfocus="onFocus(this);" onblur="onBlur(this);">
+					<img src="images/form/email-icon.png">
+				</div>
+				<div class="form-textarea">
+					<textarea name="msg" rows="5"></textarea>
+				</div>
+				<div class="form-buttons">
+					<button type="submit">
+						SEND MESSAGE
+					</button>
+					<button type="reset">
+						CLEAR
+						<img src="images/form/clear-icon.png">
+					</button>
+				</div>
+			</form>
+		</div>
+		
+		<div class="last">
+			<div class="last-content content">
+				<div class="last-msg-icon">
+					<div class="last-msg-logo">
+						<img src="images/form/twitter-logo.png">
+					</div>
+					<div>
+						<div class="last-msg-arrow"></div>
+					</div>
+				</div>
+				<div class="last-message">
+					<span class="selected">@circles</span>
+					Because we know you don't want to be in both portrait AND landscape!
+					We care about limited format ... 
+					<span class="selected">by Quill</span>
+					<br>
+					<span class="last-msg-time">about 5 minutes ago</span>
+				</div>
+				<div class="last-msg-buttons">
+					<input type="image" src="images/form/button-prev.png">
+					<input type="image" src="images/form/button-next.png">
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="footer-content content">
+				<div class="footer-column">
+					<div class="footer-marine-title">
+						<img src="images/header/marine-logo.png">
+						MARINE
+					</div>
+					<div class="footer-text">
+						Vivamus orci sem, consectetur ut vestibulum a, mper ac dui.
+						Aenean tellus nisl commodo eu aliquet ut, pulvinar ut sapien.
+						Proin tate aliquam mi nec hendrerit.
+					</div>
+				</div>
+				<div class="footer-column">
+					<div class="footer-title">Recent Posts</div>	
+					<div class="footer-post">
+						<div class="footer-text">DEC 15, 2012 | BY ADMIN</div>
+						<div class="footer-post-title">Morbi a liberto erbi erat auctor</div>
+						<div class="footer-text">
+							Sus vitae id tortor suspendisse stilum eu igula lorem ivamus orci sem, ectetur.
+						</div>
+					</div>
+					<div class="footer-post">
+						<div class="footer-text">DEC 15, 2012 | BY ADMIN</div>
+						<div class="footer-post-title">Morbi a liberto erbi erat auctor</div>
+						<div class="footer-text">
+							Sus vitae id tortor suspendisse stilum eu igula lorem ivamus orci sem, ectetur.
+						</div>
+					</div>		
+				</div>
+				<div class="footer-column">
+					<div class="footer-title">Contacts</div>
+					<div class="footer-contacts-item">
+						<div> 
+							<img src="images/footer/location.png"> 
+						</div>
+						<div class="footer-text">
+							Phoenix Inc.<br>
+							PO Box 21177<br>
+							Litle Lonsdale St, Melbourne<br>
+							Victoria 8011 Australia
+						</div>
+					</div>
+					<div class="footer-contacts-item">
+						<div> 
+							<img src="images/footer/phone.png"> 
+						</div>
+						<div class="footer-text">
+							Phone: (415) 124-5678<br>
+							Fax: (415) 124-5678
+						</div>
+					</div>
+					<div class="footer-contacts-item">
+						<div> 
+							<img src="images/footer/mail.png"> 
+						</div>
+						<div class="footer-text">
+							support@yourname.com
+						</div>
+					</div>
+				</div>
+				<div class="footer-column">
+					<div class="footer-title">Newsletter Signup</div>
+					<div class="footer-text">
+						By subscribing to our mailing list you will get the latest news from us.
+					</div>
+					<div class="footer-form">
+						<form>
+							<input type="email">
+							<input type="image" src="images/footer/checkmark.png">
+						</form>
+					</div>
+					<div class="footer-title">Follow Us</div>
+					<div>
+						<a href="https://facebook.com">
+							<img src="images/header/facebook-logo.png" alt="Facebook" class="service-logo">
+						</a>
+						<a href="https://twitter.com">
+							<img src="images/header/twitter-logo.png" alt="Twitter" class="service-logo">
+						</a>
+						<a href="https://skype.com">
+							<img src="images/header/skype-logo.png" alt="Skype" class="service-logo">
+						</a>
+						<a href="https://plus.google.com">
+							<img src="images/header/googleplus-logo.png" alt="Google+" class="service-logo">
+						</a>
+						<a href="https://vimeo.com">
+							<img src="images/header/vimeo-logo.png" alt="Vimeo" class="service-logo">
+						</a>
+						<a href="https://linkedin.com">
+							<img src="images/header/linkedin-logo.png" alt="LinkeIn" class="service-logo">
+						</a>
+						<a href="https://instagram.com">
+							<img src="images/header/instagram-logo.png" alt="Instagram" class="service-logo">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<div class="copyright">
+			<div class="copyright-content content">
+				&copy; 2013 MARINE. All Right Reserved
+			</div>			
 		</div>
 	</body>
 </html>

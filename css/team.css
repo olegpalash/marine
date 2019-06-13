@@ -1,0 +1,79 @@
+.team {
+	background-image: url("../images/team/background.png");
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 1rem 0;
+}
+
+.team-title {
+	font-size: 2em;
+	color: rgb(255, 255, 255);
+	margin: 1rem 0;
+}
+
+.team-content {
+	display: flex;
+	justify-content: space-around;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1rem; 
+}
+
+.card-photo {
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(35, 50, 58, 0.5);
+	background-color: rgba(202, 232, 236, 0.066);
+	margin-bottom: 1.5rem;
+}
+
+.card-photo img {
+	display: block;
+}
+
+.card-name {
+	color: rgb(255, 255, 255);
+	font-size: 1.25em;
+}
+
+.card-position {
+	color: rgb(38, 145, 172);
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+.card-description {
+	color: rgb(182, 195, 202);
+	font-size: 1em;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.card-line {
+	width: 30%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(100, 107, 117);
+	margin-bottom: 1rem;
+}
+.companies {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(252, 252, 252);
+	padding: 1rem 0;
+}
+
+.companies-content {
+	width: 1200px;
+	display: flex;
+	justify-content: space-between;
+}
+

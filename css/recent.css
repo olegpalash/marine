@@ -8,14 +8,14 @@
 .recent-title {
 	color: rgb(196, 211, 222);
 	font-size: 1.5em;
-	margin-top: 40px;
-	margin-bottom: 30px;
+	margin-top: 2.5rem;
+	margin-bottom: 2rem;
 }
 
 .recent-text {
 	color: rgb(101, 129, 144);
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 2.5rem;
 }
 
 .recent-projects {
@@ -71,7 +71,7 @@
 }
 
 .project-button {
-	padding: 12px;
+	padding: 0.75rem;
 	background-color: rgba(35, 50, 58, 0.25);
 }
 
@@ -79,7 +79,7 @@
 	background-color: rgb(42, 59, 69);
 	display: flex;
 	justify-content: space-between;
-	padding: 30px 20px;
+	padding: 2rem 1.25rem;
 }
 
 .project-selected .project-description {

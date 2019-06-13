@@ -6,7 +6,6 @@ nav {
 
 .navbar-content {
 	display: flex;
-	width: 1000px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -21,7 +20,7 @@ nav {
 .navbar-link,
 .navbar-link-selected {
 	text-decoration: none;
-	padding-right: 24px;
+	padding-right: 1.5rem;
 }
 
 .navbar-link {
@@ -63,10 +62,10 @@ nav {
 
 .navbar-search-input {
 	display: inline-block;
-	border: 0;
+	border: none;
 	color: rgb(115, 132, 142);
-	background-color: white;
-	margin: 16px;
+	background-color: rgb(255, 255, 255);
+	margin: 1rem;
 }
 
 .navbar-search-button {

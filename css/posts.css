@@ -1,0 +1,195 @@
+.posts {
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.posts-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.posts-text {
+	font-size: 1.5em;
+	color: rgb(35, 50, 58);
+}
+
+.posts-text .selected {
+	color: rgb(0, 143, 213);
+}
+
+.posts-button {
+	border: none;
+	background-color: rgb(0, 143, 213);
+	padding: 1.5rem 2.5rem;
+	color: rgb(255, 255, 255);
+	font-size: 0.75em;
+}
+
+.posts-button img {
+	vertical-align: middle;
+}
+
+.posts-main {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.posts-recent {
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	margin-right: 2.5rem;
+}
+
+.posts-section-title {
+	color: rgb(35, 50, 58);
+	font-size: 1.5em;
+	margin-bottom: 2rem;
+}
+
+.post {
+	display: flex;
+	margin-bottom: 2.5rem;
+}
+
+.post-date-day {
+	color: rgb(0, 143, 213);
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.post-date {
+	font-size: 0.75em;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.post-type {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.post-image {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.post-info {
+	font-size: 0.75em;
+	margin-bottom: 2rem;
+}
+
+.post-info a {
+	color: rgb(0, 143, 213);
+}
+
+.post-title {
+	font-size: 1.25em;
+	color: rgb(0, 143, 213);
+	margin-bottom: 0.5rem;
+}
+
+.post-description {
+	font-size: 1em;
+}
+
+.posts-accordeon {
+	position: relative;
+	flex-basis: 25%;
+	margin-right: 2.8rem;
+}
+
+.accordeon-button, 
+.accordeon-button-active {
+	font-size: 1.25em;
+	width: 100%;
+	border: none;
+	background-color: rgb(255, 255, 255);	
+	text-align: left;
+}
+
+.accordeon-button-active {
+	color: rgb(0, 143, 213);
+}
+
+.accordeon-icon,
+.accordeon-icon-active {
+	display: none;
+	color: rgb(0, 143, 213);
+	font-size: 1.0em;
+	margin-right: 0.5em;
+}
+
+.accordeon-button        .accordeon-icon,
+.accordeon-button-active .accordeon-icon-active {
+	display: inline;
+}
+
+.accordeon-post {
+	display: none;
+}
+
+.posts-whatsay {
+	flex-basis: 25%;
+}
+
+.quote-label {
+	display: flex;
+	background-color: rgb(35, 50, 58);
+}
+
+.quote-label img {
+	display: block;
+}
+
+.quote-name {
+	font-size: 1em;
+	color: rgb(255, 255, 255);
+	margin-top: 1.5rem;
+	margin-left: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.quote-company {
+	color: rgb(140, 217, 255);
+	font-size: 0.5em;
+	margin-left: 1.25rem;
+}
+
+.quote-arrow-line {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.quote-arrow {
+	width: 0;
+	height: 0;
+	border-left: 10px solid rgb(35, 50, 58);
+	border-top: 10px solid rgb(35, 50, 58);
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid transparent;
+	margin-right: 20px;
+}
+
+.quote {
+	display: flex;
+	margin-top: 1em;
+}
+
+.quote-text {
+	font-size: 1em;
+	margin-left: 1rem;
+}
+
+.quote-title {
+	color: rgb(0, 143, 213);
+	margin-bottom: 2em;
+}

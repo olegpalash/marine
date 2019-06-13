@@ -5,7 +5,6 @@
 }
 
 .services-content {
-	width: 1000px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -15,7 +14,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 32px 0px;	
+	margin: 2rem 0;	
 }
 
 .service-icon {
@@ -23,11 +22,11 @@
 	border-color: rgb(50, 174, 207);
 	border-width: 1px;
 	border-style: solid;
-	padding: 16px;
+	padding: 1rem;
 }
 
 .service-name {
-	margin-top: 24px;
+	margin-top: 1.5rem;
 	color: rgb(255, 255, 255);
 }
 

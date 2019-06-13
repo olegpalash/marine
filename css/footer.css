@@ -1,0 +1,90 @@
+footer {
+	background-color: rgb(25, 36, 42);
+	display: flex;
+	justify-content: center;	
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;	
+}
+
+.footer-column {
+	flex-basis: 25%;
+	margin: 1rem;
+}
+
+.footer-marine-title {
+	color: rgb(84, 126, 147);
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.footer-marine-title img {
+	vertical-align: middle;
+	margin-right: 25px;	
+}
+
+.footer-text {
+	font-size: 0.75em;
+	color: rgb(124, 161, 179);
+	margin: 0.25rem 0;
+}
+
+.footer-title {
+	font-size: 1em;
+	color: rgb(124, 161, 179);
+	margin: 0.75em 0;
+}
+
+.footer-post {
+	padding: 1rem 0;
+	border-bottom: 1px solid rgb(35, 50, 58);
+}
+
+.footer-post:last-child {
+	border-bottom: none;
+}
+
+.footer-post-title {
+	color: rgb(189, 210, 220);
+	font-size: 0.75em;
+	margin: 0.25rem 0;
+}
+
+.footer-contacts-item {
+	display: flex;
+	align-items: flex-start;
+	padding: 0.5rem 0;
+}
+
+.footer-contacts-item img {
+	margin-right: 1rem;
+} 
+
+.footer-form {
+	background-color: rgb(35, 50, 58);
+	padding: 0.5rem;
+	margin: 1rem 0;
+}
+
+.footer-form input[type="email"] {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: rgb(255, 255, 255);
+	font-size: 0.75rem;
+	width: 90%;
+}
+
+.copyright {
+	background-color: rgb(20, 29, 34);
+	padding: 1rem 0;
+	display: flex;
+	justify-content: center;
+}
+
+.copyright-content {
+	color: rgb(84, 126, 147);
+	font-size: 0.75rem;
+}
